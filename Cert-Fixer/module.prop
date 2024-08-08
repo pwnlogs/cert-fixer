@@ -1,0 +1,7 @@
+id=cert-fixer
+name=Cert Fixer
+version=v1.0
+versionCode=1
+author=pwnlogs
+description=Copies all the CA Certificates found in User Certs to System Certs (Tested in Android API 35)
+updateJson=
