@@ -1,20 +1,25 @@
 # Cert-Fixer
 
-Cert-Fixer is a Magisk module that copies all the user certificates to system certificate store.
+Cert-Fixer is a Magisk module that installs custom CA certificates to Android's system certificate store.
+This module is tested against Android 14 and 15 (API 34 and 35). 
 
-Tested on `AVD Emulator Pixel 8 API 35 (Android 15)`.
+[A step-by-step guide for installing custom CA certificates on the system store of Android 15 (API 35)](https://blog.pwnlogs.dev/articles/cert-fixer/index.html).
+
+Tested on AVD Emulators `Pixel 8 API 35 (Android 15)` and `Pixel 8 API 34 (Android 14)`.
 
 # How to
 
-1. Root your Android device using Magisk.
-2. Install your CA certificate as user certificate.
-3. Download `Cert-Fixer.zip` and install Cert-Fixer module in Magisk.
-4. Reboot.  
-   During reboot, Cert-Fixer will copy your user certificates to system store.
-5. Your user certificates should be available in system store now!
+1. Root your Android device using [rootAVD](https://gitlab.com/newbit/rootAVD) (rootAVD uses [Magisk](https://github.com/topjohnwu/Magisk)).
+2. Complete any pending updates for Magisk, and make sure you have the latest Magisk version.
+3. Install your custom CA certificate under user certificate store.
+4. Download `Cert-Fixer.zip` and install Cert-Fixer module in Magisk.
+5. Reboot.  
+   Cert-Fixer will copy all your user certificates to system store at boot up.
+6. Your user certificates should now be available in the system store!
 
 ## Notes
-1. If there are multiple versions of the same certificate (same hash, but different extensions), only the latest certificate will be copied.
+1. Cert-Fixer copies all the CA certificates from the user store to the system store. Make sure you do not have any untrusted certificates in the user store before reboot.
+2. If there are multiple versions of the same certificate (same hash, but different extensions), only the latest certificate will be copied.
 
 
 # Description and Credits
