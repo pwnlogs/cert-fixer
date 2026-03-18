@@ -6,7 +6,7 @@ This module is tested/known to work on Android 10, 12, 13, 14, and 15 (API 33, 3
 [A step-by-step guide for installing custom CA certificates on the system store of Android 15 (API 35)](https://blog.pwnlogs.dev/articles/cert-fixer/index.html).
 
 Tested on AVD Emulators: `Pixel 9 API 35 (Android 15)`, `Pixel 8 API 35 (Android 15)`, `Pixel 8 API 34 (Android 14)`  
-Physical devices:  `Samsung S9 (Android 10)`, `Samsung S10 (Android 12)`, `Readme (Android 13)`, `Pixel 8 (Android 14)`, `Xiaomi Poco X3 (Linageos 21)`   
+Physical devices:  `Samsung S9 (Android 10)`, `Samsung S10 (Android 12)`, `Readme (Android 13)`, `Pixel 8 (Android 14)`, `Xiaomi Poco X3 (Linageos 21)`, `Motorola Edge 50 Fusion`   
 Note: Some of the above physical devices were tested and confirmed by community users.
 
 # How to
